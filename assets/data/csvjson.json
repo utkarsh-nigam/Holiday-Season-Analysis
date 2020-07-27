@@ -1,0 +1,122 @@
+[
+  {
+    "day": "Wednesday",
+    "hour": "12AM - 4AM",
+    "count": 0.11
+  },
+  {
+    "day": "Wednesday",
+    "hour": "4AM - 8AM",
+    "count": 0.11
+  },
+  {
+    "day": "Wednesday",
+    "hour": "8AM - 12PM",
+    "count": 0.13
+  },
+  {
+    "day": "Wednesday",
+    "hour": "12PM - 4PM",
+    "count": 0.12
+  },
+  {
+    "day": "Wednesday",
+    "hour": "4PM - 8PM",
+    "count": 0.31
+  },
+  {
+    "day": "Wednesday",
+    "hour": "8PM - 12AM",
+    "count": 0.33
+  },
+  {
+    "day": "Cyber Monday",
+    "hour": "12AM - 4AM",
+    "count": 0.12
+  },
+  {
+    "day": "Cyber Monday",
+    "hour": "4AM - 8AM",
+    "count": 0.14
+  },
+  {
+    "day": "Cyber Monday",
+    "hour": "8AM - 12PM",
+    "count": 0.19
+  },
+  {
+    "day": "Cyber Monday",
+    "hour": "12PM - 4PM",
+    "count": 0.2
+  },
+  {
+    "day": "Cyber Monday",
+    "hour": "4PM - 8PM",
+    "count": 0.22
+  },
+  {
+    "day": "Cyber Monday",
+    "hour": "8PM - 12AM",
+    "count": 0.24
+  },
+  {
+    "day": "Thanksgiving",
+    "hour": "12AM - 4AM",
+    "count": 0.14
+  },
+  {
+    "day": "Thanksgiving",
+    "hour": "4AM - 8AM",
+    "count": 0.13
+  },
+  {
+    "day": "Thanksgiving",
+    "hour": "8AM - 12PM",
+    "count": 0.13
+  },
+  {
+    "day": "Thanksgiving",
+    "hour": "12PM - 4PM",
+    "count": 0.1
+  },
+  {
+    "day": "Thanksgiving",
+    "hour": "4PM - 8PM",
+    "count": 0.12
+  },
+  {
+    "day": "Thanksgiving",
+    "hour": "8PM - 12AM",
+    "count": 0.11
+  },
+  {
+    "day": "Black Friday",
+    "hour": "12AM - 4AM",
+    "count": 0.1
+  },
+  {
+    "day": "Black Friday",
+    "hour": "4AM - 8AM",
+    "count": 0.13
+  },
+  {
+    "day": "Black Friday",
+    "hour": "8AM - 12PM",
+    "count": 0.15
+  },
+  {
+    "day": "Black Friday",
+    "hour": "12PM - 4PM",
+    "count": 0.16
+  },
+  {
+    "day": "Black Friday",
+    "hour": "4PM - 8PM",
+    "count": 0.15
+  },
+  {
+    "day": "Black Friday",
+    "hour": "8PM - 12AM",
+    "count": 0.15
+  }
+]
