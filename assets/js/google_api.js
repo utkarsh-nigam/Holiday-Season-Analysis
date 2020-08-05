@@ -51,7 +51,7 @@ function drawAllSheets() {
 function drawSheetName(sheetName, query, responseHandler) {
     var queryString = encodeURIComponent(query);
     var query = new google.visualization.Query(
-        'https://docs.google.com/spreadsheets/d/1AsKJDhVUp_B4stegHZlxBjMJtMXdyxH85GoU9D_bhCs/gviz/tq?sheet='
+        'https://docs.google.com/spreadsheets/d/1Vg-s8YHljB-YEuiKsWi5fWxqzuNdjS6QKSvWGLI7VRY/gviz/tq?sheet='
                 + sheetName + '&headers=1&tq=' + queryString); //Query
     query.send(responseHandler);
 }
