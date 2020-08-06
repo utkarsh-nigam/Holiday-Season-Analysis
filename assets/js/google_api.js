@@ -85,7 +85,9 @@ function summaryResponseHandler(response) {
         chartArea:{
             top:5,
             width: 222,
-            height: 463}
+            height: 463},
+        vAxis:{gridlines:{color:'transparent'},
+        ticks: [0,350,700,1050,1400,1750,2100] }
     };
 
     summaryChart1.draw(dataView1,options1);
@@ -103,7 +105,9 @@ function summaryResponseHandler(response) {
         chartArea:{
             top:5,
             width: 222,
-            height: 463}
+            height: 463},
+        vAxis:{gridlines:{color:'transparent'},
+        ticks: [0,50,100,150,200,250,300] }
     };
     summaryChart2.draw(dataView2,options2);
 
@@ -120,7 +124,9 @@ function summaryResponseHandler(response) {
         chartArea:{
             top:5,
             width: 222,
-            height: 463}
+            height: 463},
+        vAxis:{gridlines:{color:'transparent'},
+        ticks: [0,250,500,750,1000,1250,1500] }
     };
 
     summaryChart3.draw(dataView3,options3);
@@ -176,11 +182,24 @@ function yearlyPerformanceResponseHandler(response) {
         //var colChartDiff1 = new google.visualization.ColumnChart(document.getElementById('yearlyPerformance1_div'));
         //var diffData1 = colChartDiff1.computeDiff(oldView1, newView1);
         var options1 = {
-            title: "Visits (in Millions)",
-            legend: { position: 'top' },
+            //title: "Visits (in Millions)",
+            legend: { position: 'none' },
+            tooltip: {trigger: "none"},
             series: {
                 0: {color: "#003f5c" }
-            }
+            },
+            hAxis: {
+                title: "Visits (in Thousands)"
+              },
+            vAxis:{
+                  gridlines:{
+                      count:0 },
+                      ticks: [0,300,600,900,1200] },
+            chartArea:{
+                    top:5,
+                    width: 250,
+                    height: "90%" }
+              
         };
 
         colChartDiff1.draw(diffData1,options1);
@@ -188,24 +207,48 @@ function yearlyPerformanceResponseHandler(response) {
         //var colChartDiff2 = new google.visualization.ColumnChart(document.getElementById('yearlyPerformance2_div'));
         //var diffData2 = colChartDiff2.computeDiff(oldView2, newView2);
         var options2 = {
-            title: "Orders (in Millions)",
-            legend: { position: 'top' },
+            //title: "Orders (in Millions)",
+            legend: { position: 'none' },
+            tooltip: {trigger: "none"},
             series: {
                 0: {color: "#bc5090"}
-            }
+            },
+            hAxis: {
+                title: "Orders (in Thousands)"
+              },
+            vAxis:{
+                  gridlines:{
+                      count:0 },
+                      ticks: [0,40,80,120,160] },
+            chartArea:{
+                    top:5,
+                    width: 250,
+                    height: "90%" }
         };
         colChartDiff2.draw(diffData2,options2);
 
         //var colChartDiff3 = new google.visualization.ColumnChart(document.getElementById('yearlyPerformance3_div'));
         //var diffData3 = colChartDiff3.computeDiff(oldView3, newView3);
         var options3 = {
-            title: "Revenue (in Million ($))",
-            legend: { position: 'top' },
+            //title: "Revenue (in Million ($))",
+            legend: { position: 'none' },
+            tooltip: {trigger: "none"},
             series: {
                 0: {color: "#ffa600"}
-            }
+            },
+            hAxis: {
+                title: "Revenue (in Thousand ($))"
+              },
+            vAxis:{
+                  gridlines:{
+                      count:0 },
+                ticks: [0,200,400,600,800] },
+            chartArea:{
+                    top:5,
+                    width: 250,
+                    height: "90%" }
         };
-
+        
         colChartDiff3.draw(diffData3,options3);
 
     }}//yearlyPerformanceResponseHandler
@@ -241,7 +284,11 @@ function channelPerformanceResponseHandler(response) {
             4: {color: "#ffa600"},
 
             5: {type: 'line', targetAxisIndex:1, color:"#003f5c"}},  
-        isStacked: true
+        isStacked: true,
+        chartArea:{
+                top:60,
+                width: "80%",
+                height: "80%" }
          };
 
     chart.draw(chartData,options);
