@@ -49,12 +49,18 @@ data=[
      d3.select('#peakDaySplit_div')
          .datum(data) // bind data to the div
          .call(donut); // draw chart in div
+
+    
  
      function donutChart() {
+        var myColor=d3.scaleOrdinal()
+        .domain(data)
+        .range(["#003f5c", "#58508d" ,"#bc5090","#ff6361", "#ffa600"]);
+
          var width,
              height,
              margin = {top: 10, right: 10, bottom: 10, left: 10},
-             colour = d3.scaleOrdinal(d3.schemeCategory10), // colour scheme
+             colour = myColor,//d3.scaleOrdinal(d3.schemeCategory10), // colour scheme
              variable, // value in data that will dictate proportions on chart
              category, // compare data by
              padAngle, // effectively dictates the gap between slices

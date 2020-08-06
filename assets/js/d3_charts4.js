@@ -192,7 +192,7 @@ i=0;
 
         var colorScale = d3.scaleLog()
             .domain([d3.min(data, function(d) {return d.count; }), d3.max(data, function(d) {return d.count; })])
-            .range(["#f0f0f0", "#2b5491"])
+            .range(["#ffffff", "#007da1"])
             //.interpolate(d3.interpolateHcl);
 
         var dayLabels = svg.selectAll(".dayLabel")

@@ -1,19 +1,19 @@
 // create svg element
-data=[{"Product Category":"Grattol","Relative Sensitivity":0.290780142,"Sensitivity":0.29,"Order Share":0.06,"Revenue Share":0.06},{"Product Category":"Masura","Relative Sensitivity":0.205673759,"Sensitivity":0.21,"Order Share":0.06,"Revenue Share":0.04},{"Product Category":"Ingarden","Relative Sensitivity":0.19858156,"Sensitivity":0.21,"Order Share":0.04,"Revenue Share":0.03},{"Product Category":"Irisk","Relative Sensitivity":0.170212766,"Sensitivity":0.19,"Order Share":0.09,"Revenue Share":0.06},{"Product Category":"Runail","Relative Sensitivity":0.134751773,"Sensitivity":0.18,"Order Share":0.15,"Revenue Share":0.09}];
+data=[{"Product Category":"GRATTOL","Relative Sensitivity":0.290780142,"Sensitivity":0.29,"Order Share":0.06,"Revenue Share":0.06},{"Product Category":"MASURA","Relative Sensitivity":0.205673759,"Sensitivity":0.21,"Order Share":0.06,"Revenue Share":0.04},{"Product Category":"INGARDEN","Relative Sensitivity":0.19858156,"Sensitivity":0.21,"Order Share":0.04,"Revenue Share":0.03},{"Product Category":"IRISK","Relative Sensitivity":0.170212766,"Sensitivity":0.19,"Order Share":0.09,"Revenue Share":0.06},{"Product Category":"RUNAIL","Relative Sensitivity":0.134751773,"Sensitivity":0.18,"Order Share":0.15,"Revenue Share":0.09}];
 
 chart_data=[{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":210,"l6x":194,"l6y":248,"point1":328,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"18px", "f4": "35px","imgp1": 150, "imgp2":112,"size1":"80px","size2":"80px"},{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":196,"l5y":210,"l6x":194,"l6y":248,"point1":328,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"18px", "f4": "35px","imgp1": 129, "imgp2":112,"size1":"90px","size2":"120px"},{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":196,"l5y":210,"l6x":194,"l6y":248,"point1":328,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"18px", "f4": "35px","imgp1": 150, "imgp2":112,"size1":"80px","size2":"80px"},
+            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":183,"l6x":194,"l6y":240,"point1":328,"point2":160,
+            "f1":"15px","f2":"12px", "f3":"30px", "f4": "40px","imgp1": 190, "imgp2":185,"size1":"80px","size2":"80px"},{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
+            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":183,"l6x":194,"l6y":240,"point1":328,"point2":160,
+            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 129, "imgp2":112,"size1":"90px","size2":"120px"},{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
+            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":183,"l6x":194,"l6y":240,"point1":328,"point2":160,
+            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 150, "imgp2":112,"size1":"80px","size2":"80px"},
             
             {"width":285, "height": 285,"centerx":142,"centery":142, "outerR1":76, "innerR1":68, "outerR2":86, "innerR2":57,  "outerR3":86, "innerR3":76, "midR3":81,
-            "l1x":234,"l1y":100, "l2x":234,"l2y":110, "l3x":262,"l3y":140,"l4x":262,"l4y":148,"l5x":142,"l5y":158,"l6x":145,"l6y":188,"point1":234,"point2":118,
-            "f1":"12px","f2":"10px", "f3":"15px", "f4": "30px", "imgp1": 112, "imgp2":86,"size1":"60px","size2":"60px"},{"width":285, "height": 285,"centerx":142,"centery":142, "outerR1":76, "innerR1":68, "outerR2":86, "innerR2":57,  "outerR3":86, "innerR3":76, "midR3":81,
-            "l1x":234,"l1y":100, "l2x":234,"l2y":110, "l3x":262,"l3y":140,"l4x":262,"l4y":148,"l5x":142,"l5y":158,"l6x":145,"l6y":188,"point1":234,"point2":118,
-            "f1":"12px","f2":"10px", "f3":"15px", "f4": "30px", "imgp1": 112, "imgp2":86,"size1":"60px","size2":"60px"}]
+            "l1x":234,"l1y":100, "l2x":234,"l2y":110, "l3x":262,"l3y":140,"l4x":262,"l4y":148,"l5x":143,"l5y":138,"l6x":145,"l6y":182,"point1":234,"point2":118,
+            "f1":"12px","f2":"10px", "f3":"23px", "f4": "34px", "imgp1": 112, "imgp2":86,"size1":"60px","size2":"60px"},{"width":285, "height": 285,"centerx":142,"centery":142, "outerR1":76, "innerR1":68, "outerR2":86, "innerR2":57,  "outerR3":86, "innerR3":76, "midR3":81,
+            "l1x":234,"l1y":100, "l2x":234,"l2y":110, "l3x":262,"l3y":140,"l4x":262,"l4y":148,"l5x":143,"l5y":138,"l6x":145,"l6y":182,"point1":234,"point2":118,
+            "f1":"12px","f2":"10px", "f3":"23px", "f4": "34px", "imgp1": 112, "imgp2":86,"size1":"60px","size2":"60px"}]
 
 
 //console.log(data)
@@ -132,6 +132,7 @@ var label5 = svg.append("text")
 .attr("x", chart_data[i].l5x)
 .attr("font-size", chart_data[i].f3)
 .attr("text-anchor", "middle")
+.attr("font-weight", "700")
 .style('fill', color)
 //.attr("transform", "rotate(-90)")
 .text(temp_data["Product Category"]);
@@ -155,11 +156,5 @@ var polyline = svg.append('polyline')
     .attr('points', [pointStart,chart_data[i].point1,pointStart[1], chart_data[i].point1,chart_data[i].point2])
     .style("stroke-dasharray", "4,4");
 
-var image = svg.append("image")
-      .attr("x",chart_data[i].imgp1 )
-      .attr("y", chart_data[i].imgp2)
-      .attr("height", chart_data[i].size1)
-      .attr("width", chart_data[i].size2)
-      .attr("xlink:href", "assets/img/d3Images/"+(i+1)+".png")
     
   }

@@ -78,9 +78,9 @@ function summaryResponseHandler(response) {
         legend: { position: 'none' },
         backgroundColor: "#f5f8fd",
         series: {
-            0: {color: "#2B5391"},
-            1: {color: "#ECBD62"},
-            2: {color: "#95BB63"}
+            0: {color: "#003f5c"},
+            1: {color: "#bc5090"},
+            2: {color: "#ffa600"}
         },
         chartArea:{
             top:5,
@@ -96,9 +96,9 @@ function summaryResponseHandler(response) {
         legend: { position: 'none' },
         backgroundColor: "#f5f8fd",
         series: {
-            0: {color: "#2B5391"},
-            1: {color: "#ECBD62"},
-            2: {color: "#95BB63"}
+            0: {color: "#003f5c"},
+            1: {color: "#bc5090"},
+            2: {color: "#ffa600"}
         },
         chartArea:{
             top:5,
@@ -113,9 +113,9 @@ function summaryResponseHandler(response) {
         legend: { position: 'right' },
         backgroundColor: "#f5f8fd",
         series: {
-            0: {color: "#2B5391"},
-            1: {color: "#ECBD62"},
-            2: {color: "#95BB63"}
+            0: {color: "#003f5c"},
+            1: {color: "#bc5090"},
+            2: {color: "#ffa600"}
         },
         chartArea:{
             top:5,
@@ -179,7 +179,7 @@ function yearlyPerformanceResponseHandler(response) {
             title: "Visits (in Millions)",
             legend: { position: 'top' },
             series: {
-                0: {color: "#3E68C5" }
+                0: {color: "#003f5c" }
             }
         };
 
@@ -191,7 +191,7 @@ function yearlyPerformanceResponseHandler(response) {
             title: "Orders (in Millions)",
             legend: { position: 'top' },
             series: {
-                0: {color: "#CC4627"}
+                0: {color: "#bc5090"}
             }
         };
         colChartDiff2.draw(diffData2,options2);
@@ -202,7 +202,7 @@ function yearlyPerformanceResponseHandler(response) {
             title: "Revenue (in Million ($))",
             legend: { position: 'top' },
             series: {
-                0: {color: "#F29C38"}
+                0: {color: "#ffa600"}
             }
         };
 
@@ -231,12 +231,16 @@ function channelPerformanceResponseHandler(response) {
                   1: {
                     title:'Order Conversion Rate',
                     minorGridlines: {color: 'transparent'},
-                    textStyle: {color: '#D88449'}
+                    textStyle: {color: '#003f5c'}
                   }},
         series: {
-            0: {color: "#234087"},
-            1: {color: "#83ACD8"},
-            5: {type: 'line', targetAxisIndex:1, color:"#D88449"}},  
+            0: {color: "#444e86"},
+            1: {color: "#955196"},
+            2: {color: "#dd5182"},
+            3: {color: "#ff6e54"},
+            4: {color: "#ffa600"},
+
+            5: {type: 'line', targetAxisIndex:1, color:"#003f5c"}},  
         isStacked: true
          };
 
