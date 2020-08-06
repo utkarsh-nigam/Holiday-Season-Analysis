@@ -1,5 +1,5 @@
 // create svg element
-data=[{"Product Category":"Electronic","Relative Sensitivity":0.290780142,"Sensitivity":0.41,"Order Share":0.49,"Revenue Share":0.53},{"Product Category":"Home & Furnishing","Relative Sensitivity":0.205673759,"Sensitivity":0.29,"Order Share":0.25,"Revenue Share":0.17},{"Product Category":"Beauty & Accessory","Relative Sensitivity":0.19858156,"Sensitivity":0.28,"Order Share":0.13,"Revenue Share":0.08},{"Product Category":"Clothing","Relative Sensitivity":0.170212766,"Sensitivity":0.24,"Order Share":0.13,"Revenue Share":0.09},{"Product Category":"Everyday Living","Relative Sensitivity":0.134751773,"Sensitivity":0.19,"Order Share":0.19,"Revenue Share":0.08}];
+data=[{"Product Category":"Grattol","Relative Sensitivity":0.290780142,"Sensitivity":0.29,"Order Share":0.06,"Revenue Share":0.06},{"Product Category":"Masura","Relative Sensitivity":0.205673759,"Sensitivity":0.21,"Order Share":0.06,"Revenue Share":0.04},{"Product Category":"Ingarden","Relative Sensitivity":0.19858156,"Sensitivity":0.21,"Order Share":0.04,"Revenue Share":0.03},{"Product Category":"Irisk","Relative Sensitivity":0.170212766,"Sensitivity":0.19,"Order Share":0.09,"Revenue Share":0.06},{"Product Category":"Runail","Relative Sensitivity":0.134751773,"Sensitivity":0.18,"Order Share":0.15,"Revenue Share":0.09}];
 
 chart_data=[{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
             "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":210,"l6x":194,"l6y":248,"point1":328,"point2":160,
@@ -28,11 +28,11 @@ var temp_data = data[i];
     .attr("height", chart_data[i].height);
 
 var scale1 = d3.scaleLinear()
-    .domain([0,0.5])
+    .domain([0.05,0.35])
     .range([3.145, 6.28]);
 
 var scale2 = d3.scaleLinear()
-    .domain([0,0.6])
+    .domain([0,0.25])
     .range([3.135, 0]);
 svg
     .append("path")

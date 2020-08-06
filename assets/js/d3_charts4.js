@@ -1,499 +1,163 @@
-var cr_data=[{"Campaign":1,"data":[
-    {
-      "day": 1,
-      "hour": 1,
-      "count": 0.04
-    },
-    {
-      "day": 1,
-      "hour": 2,
-      "count": 0.04
-    },
-    {
-      "day": 1,
-      "hour": 3,
-      "count": 0.04
-    },
-    {
-      "day": 1,
-      "hour": 4,
-      "count": 0.03
-    },
-    {
-      "day": 1,
-      "hour": 5,
-      "count": 0.07
-    },
-    {
-      "day": 1,
-      "hour": 6,
-      "count": 0.22
-    },
-    {
-      "day": 4,
-      "hour": 1,
-      "count": 0.05
-    },
-    {
-      "day": 4,
-      "hour": 2,
-      "count": 0.06
-    },
-    {
-      "day": 4,
-      "hour": 3,
-      "count": 0.08
-    },
-    {
-      "day": 4,
-      "hour": 4,
-      "count": 0.08
-    },
-    {
-      "day": 4,
-      "hour": 5,
-      "count": 0.1
-    },
-    {
-      "day": 4,
-      "hour": 6,
-      "count": 0.12
-    },
-    {
-      "day": 2,
-      "hour": 1,
-      "count": 0.09
-    },
-    {
-      "day": 2,
-      "hour": 2,
-      "count": 0.08
-    },
-    {
-      "day": 2,
-      "hour": 3,
-      "count": 0.08
-    },
-    {
-      "day": 2,
-      "hour": 4,
-      "count": 0.06
-    },
-    {
-      "day": 2,
-      "hour": 5,
-      "count": 0.08
-    },
-    {
-      "day": 2,
-      "hour": 6,
-      "count": 0.09
-    },
-    {
-      "day": 3,
-      "hour": 1,
-      "count": 0.07
-    },
-    {
-      "day": 3,
-      "hour": 2,
-      "count": 0.08
-    },
-    {
-      "day": 3,
-      "hour": 3,
-      "count": 0.08
-    },
-    {
-      "day": 3,
-      "hour": 4,
-      "count": 0.07
-    },
-    {
-      "day": 3,
-      "hour": 5,
-      "count": 0.08
-    },
-    {
-      "day": 3,
-      "hour": 6,
-      "count": 0.09
-    }
-   ] },
-{"Campaign":2,"data": [
-    {
-      "day": 1,
-      "hour": 1,
-      "count": 0.04
-    },
-    {
-      "day": 1,
-      "hour": 2,
-      "count": 0.05
-    },
-    {
-      "day": 1,
-      "hour": 3,
-      "count": 0.05
-    },
-    {
-      "day": 1,
-      "hour": 4,
-      "count": 0.04
-    },
-    {
-      "day": 1,
-      "hour": 5,
-      "count": 0.09
-    },
-    {
-      "day": 1,
-      "hour": 6,
-      "count": 0.24
-    },
-    {
-      "day": 4,
-      "hour": 1,
-      "count": 0.09
-    },
-    {
-      "day": 4,
-      "hour": 2,
-      "count": 0.09
-    },
-    {
-      "day": 4,
-      "hour": 3,
-      "count": 0.12
-    },
-    {
-      "day": 4,
-      "hour": 4,
-      "count": 0.12
-    },
-    {
-      "day": 4,
-      "hour": 5,
-      "count": 0.15
-    },
-    {
-      "day": 4,
-      "hour": 6,
-      "count": 0.26
-    },
-    {
-      "day": 2,
-      "hour": 1,
-      "count": 0.12
-    },
-    {
-      "day": 2,
-      "hour": 2,
-      "count": 0.1
-    },
-    {
-      "day": 2,
-      "hour": 3,
-      "count": 0.1
-    },
-    {
-      "day": 2,
-      "hour": 4,
-      "count": 0.08
-    },
-    {
-      "day": 2,
-      "hour": 5,
-      "count": 0.1
-    },
-    {
-      "day": 2,
-      "hour": 6,
-      "count": 0.13
-    },
-    {
-      "day": 3,
-      "hour": 1,
-      "count": 0.08
-    },
-    {
-      "day": 3,
-      "hour": 2,
-      "count": 0.09
-    },
-    {
-      "day": 3,
-      "hour": 3,
-      "count": 0.1
-    },
-    {
-      "day": 3,
-      "hour": 4,
-      "count": 0.1
-    },
-    {
-      "day": 3,
-      "hour": 5,
-      "count": 0.11
-    },
-    {
-      "day": 3,
-      "hour": 6,
-      "count": 0.16
-    }
-   ]},
-{"Campaign":3,"data":[
-    {
-      "day": 1,
-      "hour": 1,
-      "count": 0.02
-    },
-    {
-      "day": 1,
-      "hour": 2,
-      "count": 0.03
-    },
-    {
-      "day": 1,
-      "hour": 3,
-      "count": 0.04
-    },
-    {
-      "day": 1,
-      "hour": 4,
-      "count": 0.03
-    },
-    {
-      "day": 1,
-      "hour": 5,
-      "count": 0.07
-    },
-    {
-      "day": 1,
-      "hour": 6,
-      "count": 0.23
-    },
-    {
-      "day": 4,
-      "hour": 1,
-      "count": 0.06
-    },
-    {
-      "day": 4,
-      "hour": 2,
-      "count": 0.08
-    },
-    {
-      "day": 4,
-      "hour": 3,
-      "count": 0.11
-    },
-    {
-      "day": 4,
-      "hour": 4,
-      "count": 0.11
-    },
-    {
-      "day": 4,
-      "hour": 5,
-      "count": 0.13
-    },
-    {
-      "day": 4,
-      "hour": 6,
-      "count": 0.16
-    },
-    {
-      "day": 2,
-      "hour": 1,
-      "count": 0.1
-    },
-    {
-      "day": 2,
-      "hour": 2,
-      "count": 0.1
-    },
-    {
-      "day": 2,
-      "hour": 3,
-      "count": 0.09
-    },
-    {
-      "day": 2,
-      "hour": 4,
-      "count": 0.07
-    },
-    {
-      "day": 2,
-      "hour": 5,
-      "count": 0.09
-    },
-    {
-      "day": 2,
-      "hour": 6,
-      "count": 0.12
-    },
-    {
-      "day": 3,
-      "hour": 1,
-      "count": 0.09
-    },
-    {
-      "day": 3,
-      "hour": 2,
-      "count": 0.09
-    },
-    {
-      "day": 3,
-      "hour": 3,
-      "count": 0.11
-    },
-    {
-      "day": 3,
-      "hour": 4,
-      "count": 0.1
-    },
-    {
-      "day": 3,
-      "hour": 5,
-      "count": 0.1
-    },
-    {
-      "day": 3,
-      "hour": 6,
-      "count": 0.09
-    }
-   ] },
-{"Campaign":4,"data": [
-    {
-      "day": 1,
-      "hour": 1,
-      "count": 0.01
-    },
-    {
-      "day": 1,
-      "hour": 2,
-      "count": 0.02
-    },
-    {
-      "day": 1,
-      "hour": 3,
-      "count": 0.02
-    },
-    {
-      "day": 1,
-      "hour": 4,
-      "count": 0.02
-    },
-    {
-      "day": 1,
-      "hour": 5,
-      "count": 0.05
-    },
-    {
-      "day": 1,
-      "hour": 6,
-      "count": 0.14
-    },
-    {
-      "day": 4,
-      "hour": 1,
-      "count": 0.03
-    },
-    {
-      "day": 4,
-      "hour": 2,
-      "count": 0.04
-    },
-    {
-      "day": 4,
-      "hour": 3,
-      "count": 0.06
-    },
-    {
-      "day": 4,
-      "hour": 4,
-      "count": 0.06
-    },
-    {
-      "day": 4,
-      "hour": 5,
-      "count": 0.08
-    },
-    {
-      "day": 4,
-      "hour": 6,
-      "count": 0.11
-    },
-    {
-      "day": 2,
-      "hour": 1,
-      "count": 0.05
-    },
-    {
-      "day": 2,
-      "hour": 2,
-      "count": 0.05
-    },
-    {
-      "day": 2,
-      "hour": 3,
-      "count": 0.05
-    },
-    {
-      "day": 2,
-      "hour": 4,
-      "count": 0.03
-    },
-    {
-      "day": 2,
-      "hour": 5,
-      "count": 0.04
-    },
-    {
-      "day": 2,
-      "hour": 6,
-      "count": 0.04
-    },
-    {
-      "day": 3,
-      "hour": 1,
-      "count": 0.03
-    },
-    {
-      "day": 3,
-      "hour": 2,
-      "count": 0.04
-    },
-    {
-      "day": 3,
-      "hour": 3,
-      "count": 0.05
-    },
-    {
-      "day": 3,
-      "hour": 4,
-      "count": 0.05
-    },
-    {
-      "day": 3,
-      "hour": 5,
-      "count": 0.05
-    },
-    {
-      "day": 3,
-      "hour": 6,
-      "count": 0.06
-    }
-   ] }]
+var cr_data=[
+  {
+    "day": 1,
+    "hour": 1,
+    "count": 0.127853881
+  },
+  {
+    "day": 1,
+    "hour": 2,
+    "count": 0.176787612
+  },
+  {
+    "day": 1,
+    "hour": 3,
+    "count": 0.191950185
+  },
+  {
+    "day": 1,
+    "hour": 4,
+    "count": 0.183119625
+  },
+  {
+    "day": 1,
+    "hour": 5,
+    "count": 0.175426913
+  },
+  {
+    "day": 1,
+    "hour": 6,
+    "count": 0.171140048
+  },
+  {
+    "day": 2,
+    "hour": 1,
+    "count": 0.299759471
+  },
+  {
+    "day": 2,
+    "hour": 2,
+    "count": 0.222855785
+  },
+  {
+    "day": 2,
+    "hour": 3,
+    "count": 0.193800564
+  },
+  {
+    "day": 2,
+    "hour": 4,
+    "count": 0.227466567
+  },
+  {
+    "day": 2,
+    "hour": 5,
+    "count": 0.18410025
+  },
+  {
+    "day": 2,
+    "hour": 6,
+    "count": 0.188438438
+  },
+  {
+    "day": 3,
+    "hour": 1,
+    "count": 0.163653663
+  },
+  {
+    "day": 3,
+    "hour": 2,
+    "count": 0.190521689
+  },
+  {
+    "day": 3,
+    "hour": 3,
+    "count": 0.172220333
+  },
+  {
+    "day": 3,
+    "hour": 4,
+    "count": 0.192522173
+  },
+  {
+    "day": 3,
+    "hour": 5,
+    "count": 0.189194224
+  },
+  {
+    "day": 3,
+    "hour": 6,
+    "count": 0.165111323
+  },
+  {
+    "day": 4,
+    "hour": 1,
+    "count": 0.196182728
+  },
+  {
+    "day": 4,
+    "hour": 2,
+    "count": 0.193056286
+  },
+  {
+    "day": 4,
+    "hour": 3,
+    "count": 0.213240381
+  },
+  {
+    "day": 4,
+    "hour": 4,
+    "count": 0.251506173
+  },
+  {
+    "day": 4,
+    "hour": 5,
+    "count": 0.259629878
+  },
+  {
+    "day": 4,
+    "hour": 6,
+    "count": 0.242917529
+  },
+  {
+    "day": 5,
+    "hour": 1,
+    "count": 0.170016077
+  },
+  {
+    "day": 5,
+    "hour": 2,
+    "count": 0.085313071
+  },
+  {
+    "day": 5,
+    "hour": 3,
+    "count": 0.088702089
+  },
+  {
+    "day": 5,
+    "hour": 4,
+    "count": 0.111636475
+  },
+  {
+    "day": 5,
+    "hour": 5,
+    "count": 0.092967061
+  },
+  {
+    "day": 5,
+    "hour": 6,
+    "count": 0.113856813
+  }
+ ]
 
-var days = ["Wednesday", "Thanksgiving", "Black Friday", "Cyber Monday"],
+   var days = ["Thanksgiving", "Black Friday", "Saturday", "Sunday", "Cyber Monday"],
 	times = ["12AM - 4AM", "4AM - 8AM", "8AM - 12PM", "12PM - 4PM", "4PM - 8PM", "8PM - 12AM"];
 
 
 //var dayDict={"Wednesday":0,"Thanksgiving":1, "Black Friday": 2, "Cyber Monday:3" };    
 i=0;
-    var data =cr_data[i].data
+    var data =cr_data
 
     var margin = {
       top: 18,
@@ -509,7 +173,7 @@ i=0;
 
 
         //SVG container
-        var svg = d3.select('#c'+(i+1)+'Chart5')
+        var svg = d3.select('#hourlyTrend_div2')
             .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)

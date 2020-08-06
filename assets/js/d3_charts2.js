@@ -1,113 +1,41 @@
 
 //data=[{"Product Category":"Electronic","Relative Sensitivity":0.290780142,"Sensitivity":0.41,"Order Share":0.49,"Revenue Share":0.53},{"Product Category":"Home & Furnishing","Relative Sensitivity":0.205673759,"Sensitivity":0.29,"Order Share":0.25,"Revenue Share":0.17},{"Product Category":"Beauty & Accessory","Relative Sensitivity":0.19858156,"Sensitivity":0.28,"Order Share":0.13,"Revenue Share":0.08},{"Product Category":"Clothing","Relative Sensitivity":0.170212766,"Sensitivity":0.24,"Order Share":0.13,"Revenue Share":0.09},{"Product Category":"Everyday Living","Relative Sensitivity":0.134751773,"Sensitivity":0.19,"Order Share":0.19,"Revenue Share":0.08}];
 data=[
-    {"Campaign":1,"data":[
-     {
-       "Day": "Wednesday",
-       "Visits": "57K",
-       "Orders": "8K",
-       "Revenue": 1
-     },
      {
        "Day": "Thanksgiving",
-       "Visits": "41K",
-       "Orders": "4K",
-       "Revenue": 0.6
+       "Visits": "90K",
+       "Orders": "16K",
+       "Revenue": 78
      },
      {
        "Day": "Black Friday",
-       "Visits": "44K",
-       "Orders": "5K",
-       "Revenue": 0.5
+       "Visits": "111K",
+       "Orders": "23K",
+       "Revenue": 103
      },
+     {
+        "Day": "Saturday",
+        "Visits": "85K",
+        "Orders": "15K",
+        "Revenue": 70
+      },
+      {
+        "Day": "Sunday",
+        "Visits": "87K",
+        "Orders": "20K",
+        "Revenue": 88
+      },
      {
        "Day": "Cyber Monday",
-       "Visits": "87K",
-       "Orders": "9K",
-       "Revenue": 0.9
+       "Visits": "69K",
+       "Orders": "7K",
+       "Revenue": 33
      }
-    ]},{"Campaign":2,  "data":[
-     {
-       "Day": "Wednesday",
-       "Visits": "206K",
-       "Orders": "41K",
-       "Revenue": 5.
-     },
-     {
-       "Day": "Thanksgiving",
-       "Visits": "316K",
-       "Orders": "43K",
-       "Revenue": 5.1
-     },
-     {
-       "Day": "Black Friday",
-       "Visits": "336K",
-       "Orders": "47K",
-       "Revenue": 4.9
-     },
-     {
-       "Day": "Cyber Monday",
-       "Visits": "394K",
-       "Orders": "70K",
-       "Revenue": 6.9
-     }
-    ]}, {"Campaign":3,  "data":[
-     {
-       "Day": "Wednesday",
-       "Visits": "36K",
-       "Orders": "6K",
-       "Revenue": 0.7
-     },
-     {
-       "Day": "Thanksgiving",
-       "Visits": "44K",
-       "Orders": "6K",
-       "Revenue": 0.7
-     },
-     {
-       "Day": "Black Friday",
-       "Visits": "46K",
-       "Orders": "6K",
-       "Revenue": 0.7
-     },
-     {
-       "Day": "Cyber Monday",
-       "Visits": "83K",
-       "Orders": "13K",
-       "Revenue": 1.3
-     }
-    ]}, {"Campaign":4,  "data":[
-     {
-       "Day": "Wednesday",
-       "Visits": "7292K",
-       "Orders": "637K",
-       "Revenue": 93
-     },
-     {
-       "Day": "Thanksgiving",
-       "Visits": "11419K",
-       "Orders": "555K",
-       "Revenue": 80.8
-     },
-     {
-       "Day": "Black Friday",
-       "Visits": "7028K",
-       "Orders": "402K",
-       "Revenue": 53.5
-     },
-     {
-       "Day": "Cyber Monday",
-       "Visits": "7936K",
-       "Orders": "579K",
-       "Revenue": 77.3
-     }
-    ]}
- 
  ]
  
  
  
- for (i = 0; i < 4; i++) {
+ for (i = 0; i < 1; i++) {
      var donut = donutChart()
      .width(1100)
      .height(600)
@@ -117,9 +45,9 @@ data=[
      .category('Day');
  
  
-     console.log(data[i].data)
-     d3.select('#c'+(i+1)+'Chart3')
-         .datum(data[i].data) // bind data to the div
+     //console.log(data[i].data)
+     d3.select('#peakDaySplit_div')
+         .datum(data) // bind data to the div
          .call(donut); // draw chart in div
  
      function donutChart() {
@@ -198,7 +126,7 @@ data=[
                      .attr('dy', '.35em')
                      .html(function(d) {
                          // add "key: value" for given category. Number inside tspan is bolded in stylesheet.
-                         return d.data[category] + ': <tspan>$ ' + d.data[variable] + 'M</tspan>';
+                         return d.data[category] + ': <tspan>$ ' + d.data[variable] + 'K</tspan>';
                      })
                      .attr('transform', function(d) {
  
