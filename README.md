@@ -5,8 +5,8 @@ Learn customer patterns & trends through visualization of online sales data & de
 
 ## Approach:
 Analyze the performance of holiday months i.e. November-December and compare them with that non-holiday months i.e., January - October, and then focus on the holiday season trends.  
-<i>* Due to data availablity contraints, October data has been scaled to represent the Non-Holiday Season.<i>  
-<i>* Product names have been randomly assigned as per the SKU's available in the original data set.<i>
+<i>* Due to data availablity contraints, October data has been scaled to represent the Non-Holiday Season.</i>  
+<i>* Product names have been randomly assigned as per the SKU's available in the original data set.</i>
 
 ## Data Source:
 <a href="https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop" target=_blank>Kaggle</a> (in association with <a href="https://rees46.com/" target=_blank>REES46 Marketing Platform</a>)
