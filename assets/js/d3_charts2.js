@@ -1,5 +1,3 @@
-
-//data=[{"Product Category":"Electronic","Relative Sensitivity":0.290780142,"Sensitivity":0.41,"Order Share":0.49,"Revenue Share":0.53},{"Product Category":"Home & Furnishing","Relative Sensitivity":0.205673759,"Sensitivity":0.29,"Order Share":0.25,"Revenue Share":0.17},{"Product Category":"Beauty & Accessory","Relative Sensitivity":0.19858156,"Sensitivity":0.28,"Order Share":0.13,"Revenue Share":0.08},{"Product Category":"Clothing","Relative Sensitivity":0.170212766,"Sensitivity":0.24,"Order Share":0.13,"Revenue Share":0.09},{"Product Category":"Everyday Living","Relative Sensitivity":0.134751773,"Sensitivity":0.19,"Order Share":0.19,"Revenue Share":0.08}];
 data=[
      {
        "Day": "Thanksgiving",
@@ -32,13 +30,161 @@ data=[
        "Revenue": 33
      }
  ]
+
+ table_data={
+        "Thanksgiving":[
+            {
+              "product_name": "Runail Glitter Stick",
+              "Orders": 814,
+              "Revenue": 4032
+            },
+            {
+              "product_name": "Irisk Rosehip Oil",
+              "Orders": 391,
+              "Revenue": 121
+            },
+            {
+              "product_name": "Grattol Dry Shampoo Collection",
+              "Orders": 319,
+              "Revenue": 275
+            },
+            {
+              "product_name": "Masura Fluid Lip Color",
+              "Orders": 303,
+              "Revenue": 1584
+            },
+            {
+              "product_name": "Domix Magnetic Brush Set",
+              "Orders": 286,
+              "Revenue": 105
+            }
+           ],
+        "Black Friday": [
+            {
+              "product_name": "Runail Glitter Stick",
+              "Orders": 842,
+              "Revenue": 4092
+            },
+            {
+              "product_name": "Irisk Rosehip Oil",
+              "Orders": 495,
+              "Revenue": 149
+            },
+            {
+              "product_name": "Grattol Dry Shampoo Collection",
+              "Orders": 473,
+              "Revenue": 385
+            },
+            {
+              "product_name": "Masura Fluid Lip Color",
+              "Orders": 451,
+              "Revenue": 2090
+            },
+            {
+              "product_name": "Italwax Hair Strobing Spray",
+              "Orders": 446,
+              "Revenue": 4532
+            }
+           ],
+    "Saturday": [
+        {
+          "product_name": "Runail Glitter Stick",
+          "Orders": 545,
+          "Revenue": 2646
+        },
+        {
+          "product_name": "Irisk Rosehip Oil",
+          "Orders": 402,
+          "Revenue": 121
+        },
+        {
+          "product_name": "Grattol Dry Shampoo Collection",
+          "Orders": 374,
+          "Revenue": 303
+        },
+        {
+          "product_name": "Masura Fluid Lip Color",
+          "Orders": 330,
+          "Revenue": 1463
+        },
+        {
+          "product_name": "Domix Magnetic Brush Set",
+          "Orders": 303,
+          "Revenue": 105
+        }
+       ],
+           
+        "Sunday": [
+            {
+              "product_name": "Runail Glitter Stick",
+              "Orders": 869,
+              "Revenue": 4224
+            },
+            {
+              "product_name": "Grattol Dry Shampoo Collection",
+              "Orders": 495,
+              "Revenue": 402
+            },
+            {
+              "product_name": "Irisk Rosehip Oil",
+              "Orders": 462,
+              "Revenue": 138
+            },
+            {
+              "product_name": "Masura Fluid Lip Color",
+              "Orders": 413,
+              "Revenue": 1832
+            },
+            {
+              "product_name": "Domix Magnetic Brush Set",
+              "Orders": 396,
+              "Revenue": 138
+            }
+           ],
+           
+        "Cyber Monday": [
+            {
+              "product_name": "Runail Glitter Stick",
+              "Orders": 325,
+              "Revenue": 1700
+            },
+            {
+              "product_name": "Grattol Dry Shampoo Collection",
+              "Orders": 154,
+              "Revenue": 149
+            },
+            {
+              "product_name": "Irisk Rosehip Oil",
+              "Orders": 132,
+              "Revenue": 44
+            },
+            {
+              "product_name": "Italwax Hair Strobing Spray",
+              "Orders": 121,
+              "Revenue": 1326
+            },
+            {
+              "product_name": "Lip Pencil Set",
+              "Orders": 116,
+              "Revenue": 182
+            }
+           ]
+ }
+
  
- 
- 
+
+var columns = [
+    { head: 'Product Name', cl: 'title', html: d3.f('product_name') },
+    { head: 'Orders', cl: 'num', html: d3.f('Orders', d3.format(',')) }];
+    //,
+    //{ head: 'Revenue', cl: 'num', html: d3.f('Revenue', d3.format('$,'))}
+//];
+
+ var table_width=300;
  for (i = 0; i < 1; i++) {
      var donut = donutChart()
-     .width(1100)
-     .height(600)
+     .width(750)
+     .height(520)
      .cornerRadius(3) // sets how rounded the corners are on each slice
      .padAngle(0.015) // effectively dictates the gap between slices
      .variable('Revenue')
@@ -46,7 +192,7 @@ data=[
  
  
      //console.log(data[i].data)
-     d3.select('#peakDaySplit_div')
+     d3.select('#peakDaySplit_div1')
          .datum(data) // bind data to the div
          .call(donut); // draw chart in div
 
@@ -97,11 +243,14 @@ data=[
  
                  // ===========================================================================================
                  // append the svg object to the selection
-                 var svg = selection.append('svg')
-                     .attr('width', width + margin.left + margin.right)
-                     .attr('height', height + margin.top + margin.bottom)
-                 .append('g')
-                     .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+                 var svg1 = selection.append('svg')
+                     .attr('width', width + table_width + margin.left + margin.right)
+                     .attr('height', height + margin.top + margin.bottom);
+                //  .append('g')
+                //      .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+                    
+                var svg = svg1.append("g").attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+
                  // ===========================================================================================
  
                  // ===========================================================================================
@@ -113,7 +262,8 @@ data=[
                  svg.append('g').attr('class', labelName_v);
                  svg.append('g').attr('class', lines_v);
                  // ===========================================================================================
- 
+                 
+
                  // ===========================================================================================
                  // add and colour the donut slices
                  var path = svg.select('.'+slices_v)
@@ -130,9 +280,10 @@ data=[
                      .data(pie)
                  .enter().append('text')
                      .attr('dy', '.35em')
+                     .attr("font-size", "15px")
                      .html(function(d) {
                          // add "key: value" for given category. Number inside tspan is bolded in stylesheet.
-                         return d.data[category] + ': <tspan>$ ' + d.data[variable] + 'K</tspan>';
+                         return d.data[category] + ': <tspan>$' + d.data[variable] + 'K</tspan>';
                      })
                      .attr('transform', function(d) {
  
@@ -141,7 +292,7 @@ data=[
                          var pos = outerArc.centroid(d);
  
                          // changes the point to be on left or right depending on where label is.
-                         pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+                         pos[0] = radius * 0.88 * (midAngle(d) < Math.PI ? 1 : -1);
                          return 'translate(' + pos + ')';
                      })
                      .style('text-anchor', function(d) {
@@ -149,7 +300,29 @@ data=[
                          return (midAngle(d)) < Math.PI ? 'start' : 'end';
                      });
                  // ===========================================================================================
- 
+                 svg.append('text')
+                 .attr('class', 'toolCircle')
+                 .attr('dy', -35) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
+                 .html(function(d,i) {
+                    tip=''
+                    tip += '<tspan x="0">' + 'Hover Over the' + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">'  + " " + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + 'Donut Slice' + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">'  + " " + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + 'for More Details' + '</tspan>';
+                    return tip
+                          }) // add text to the circle.
+                 .style('font-size', '1.5em')
+                 .style('text-anchor', 'middle'); // centres text in tooltip
+                          
+                 svg.append('circle')
+                         .attr('class', 'toolCircle')
+                         .attr('r', radius * 0.55) // radius of tooltip circle
+                         .style('fill', "#a8a8a8") // colour based on category mouse is over
+                         .style('fill-opacity', 0.35);
+
+
+
                  // ===========================================================================================
                  // add lines connecting labels to slice. A polyline creates straight lines connecting several points
                  var polyline = svg.select('.'+lines_v)
@@ -160,7 +333,7 @@ data=[
  
                          // see label transform function for explanations of these three lines.
                          var pos = outerArc.centroid(d);
-                         pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+                         pos[0] = radius * 0.88 * (midAngle(d) < Math.PI ? 1 : -1);
                          return [arc.centroid(d), outerArc.centroid(d), pos]
                      });
                  // ===========================================================================================
@@ -181,12 +354,13 @@ data=[
  
                      // add tooltip (svg circle element) when mouse enters label or slice
                      selection.on('mouseenter', function (data) {
+                        d3.selectAll('.toolCircle').remove();
  
                          svg.append('text')
                              .attr('class', 'toolCircle')
-                             .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
+                             .attr('dy', -35) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
                              .html(toolTipHTML(data)) // add text to the circle.
-                             .style('font-size', '.9em')
+                             .style('font-size', '1.5em')
                              .style('text-anchor', 'middle'); // centres text in tooltip
  
                          svg.append('circle')
@@ -194,12 +368,89 @@ data=[
                              .attr('r', radius * 0.55) // radius of tooltip circle
                              .style('fill', colour(data.data[category])) // colour based on category mouse is over
                              .style('fill-opacity', 0.35);
- 
-                     });
+                        
+                        var caption = d3.select('#peakDaySplit_div2_title')
+                                            .append('text')
+                                            .attr('class', 'toolTableTitle')
+                                            .attr("width", 270)
+                                            .attr("height", 40)
+                                            
+                                            .html(tableTitle(data)) // add text to the circle.
+                                            .style('font-size', '1.2em')
+                                            .attr("font-weight", "700")
+                                            .style('text-anchor', 'middle'); // centres text in tooltip
+
+                                        
+
+                        var table = d3.select('#peakDaySplit_div2_table')
+                                    .append('table')
+                                    .attr("width", 290)
+                                    .attr("height", 200)
+                                    .attr('class', 'toolTable')
+                                    .attr('transform', 'translate(' + 500 / 2 + ',' + height / 2 + ')');
+
+                        table.append('thead').append('tr')
+                        .selectAll('th')
+                        .data(columns).enter()
+                        .append('th')
+                        .attr('class', d3.f('cl'))
+                        .text(d3.f('head'))
+                        .style('background-color', colour(data.data[category])+"70");
+                    
+                        // create table body
+                        table.append('tbody')
+                            .selectAll('tr')
+                            .data(tableHTML(data)).enter()
+                            .append('tr')
+                            .selectAll('td')
+                            .data(function(row, i) {
+                                return columns.map(function(c) {
+                                    // compute cell values for this specific row
+                                    var cell = {};
+                                    d3.keys(c).forEach(function(k) {
+                                        cell[k] = typeof c[k] == 'function' ? c[k](row,i) : c[k];
+                                    });
+                                    return cell;
+                                });
+                            }).enter()
+                            .append('td')
+                            .html(d3.f('html'))
+                            .attr('class', d3.f('cl'))
+                            .style('background', colour(data.data[category])+"35")
+                        
+                        function length() {
+                            var fmt = d3.format('02d');
+                            return function(l) { return Math.floor(l / 60) + ':' + fmt(l % 60) + ''; };
+                        }
+                    });
  
                      // remove the tooltip when mouse leaves the slice/label
                      selection.on('mouseout', function () {
                          d3.selectAll('.toolCircle').remove();
+                         d3.selectAll('.toolTableTitle').remove();
+                         d3.selectAll('.toolTable').remove();
+                         svg.append('text')
+                         .attr('class', 'toolCircle')
+                         .attr('dy', -35) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
+                         .html(function(d,i) {
+                            tip=''
+                            tip += '<tspan x="0">' + 'Hover Over the' + '</tspan>';
+                            tip += '<tspan x="0" dy="1.2em">'  + " " + '</tspan>';
+                            tip += '<tspan x="0" dy="1.2em">' + 'Donut Slice' + '</tspan>';
+                            tip += '<tspan x="0" dy="1.2em">'  + " " + '</tspan>';
+                            tip += '<tspan x="0" dy="1.2em">' + 'for More Details' + '</tspan>';
+                            return tip
+                                  }) // add text to the circle.
+                         .style('font-size', '1.5em')
+                         .style('text-anchor', 'middle'); // centres text in tooltip
+
+                         svg.append('circle')
+                         .attr('class', 'toolCircle')
+                         .attr('r', radius * 0.55) // radius of tooltip circle
+                         .style('fill', "#a8a8a8") // colour based on category mouse is over
+                         .style('fill-opacity', 0.35);
+                         
+
                      });
                  }
  
@@ -211,6 +462,9 @@ data=[
                          i   = 0;
                      var tempData = data.data;
                      delete tempData["Revenue"]
+                    var currentValue=tempData["Day"]
+                    //console.log(currentValue);
+                    //console.log(table_data[currentValue])
                      for (var key in tempData) {
  
                          // if value is a number, format it as a percentage
@@ -219,12 +473,39 @@ data=[
                          // leave off 'dy' attr for first tspan so the 'dy' attr on text element works. The 'dy' attr on
                          // tspan effectively imitates a line break.
                          if (i === 0) tip += '<tspan x="0">' + key + ': ' + value + '</tspan>';
-                         else tip += '<tspan x="0" dy="1.2em">' + key + ': ' + value + '</tspan>';
+                         else tip += '<tspan x="0" dy="1.2em">'  + " " + '</tspan>'+'<tspan x="0" dy="1.2em">' + key + ': ' + value + '</tspan>';
                          i++;
                      }
  
                      return tip;
                  }
+
+
+                 function tableTitle(data) {
+                        
+                    var tempData = data.data;
+                    var currentValue=tempData["Day"]
+                    var title = '<tspan x="0">' + 'Top Products: ' + currentValue + '</tspan>';
+                    return title;
+                }
+
+                 function tableHTML(data) {
+                    var tempData = data.data;
+                    var currentValue=tempData["Day"];
+
+                    var tempTableData=table_data[currentValue];
+                    var tip = '',
+                         i   = 0;
+                    tip += 'Product' + '</tspan>' + 'Orders' + '</tspan>' + 'Revenue';
+                    for (var key in table_data) {
+                        // if value is a number, format it as a percentage
+                        
+                        if(key == currentValue) tempTableData = table_data[key];
+                    };
+                    return tempTableData;
+                }
+
+
                  // ===========================================================================================
  
              });

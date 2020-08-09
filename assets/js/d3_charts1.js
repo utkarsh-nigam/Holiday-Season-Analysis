@@ -1,13 +1,13 @@
 // create svg element
 data=[{"Product Category":"GRATTOL","Relative Sensitivity":0.290780142,"Sensitivity":0.29,"Order Share":0.06,"Revenue Share":0.06},{"Product Category":"MASURA","Relative Sensitivity":0.205673759,"Sensitivity":0.21,"Order Share":0.06,"Revenue Share":0.04},{"Product Category":"INGARDEN","Relative Sensitivity":0.19858156,"Sensitivity":0.21,"Order Share":0.04,"Revenue Share":0.03},{"Product Category":"IRISK","Relative Sensitivity":0.170212766,"Sensitivity":0.19,"Order Share":0.09,"Revenue Share":0.06},{"Product Category":"RUNAIL","Relative Sensitivity":0.134751773,"Sensitivity":0.18,"Order Share":0.15,"Revenue Share":0.09}];
 
-chart_data=[{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":183,"l6x":194,"l6y":240,"point1":328,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"30px", "f4": "40px","imgp1": 190, "imgp2":185,"size1":"80px","size2":"80px"},{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":183,"l6x":194,"l6y":240,"point1":328,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 129, "imgp2":112,"size1":"90px","size2":"120px"},{"width":380, "height": 380,"centerx":190,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":328,"l1y":140, "l2x":328,"l2y":152, "l3x":357,"l3y":200,"l4x":357,"l4y":212,"l5x":190,"l5y":183,"l6x":194,"l6y":240,"point1":328,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 150, "imgp2":112,"size1":"80px","size2":"80px"},
+chart_data=[{"width":370, "height": 380,"centerx":165,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
+            "l1x":303,"l1y":140, "l2x":303,"l2y":152, "l3x":332,"l3y":200,"l4x":332,"l4y":212,"l5x":165,"l5y":183,"l6x":169,"l6y":240,"point1":303,"point2":160,
+            "f1":"15px","f2":"12px", "f3":"30px", "f4": "40px","imgp1": 165, "imgp2":185,"size1":"80px","size2":"80px"},{"width":370, "height": 380,"centerx":165,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
+            "l1x":303,"l1y":140, "l2x":303,"l2y":152, "l3x":332,"l3y":200,"l4x":332,"l4y":212,"l5x":165,"l5y":183,"l6x":169,"l6y":240,"point1":303,"point2":160,
+            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 104, "imgp2":112,"size1":"90px","size2":"120px"},{"width":370, "height": 380,"centerx":165,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
+            "l1x":303,"l1y":140, "l2x":303,"l2y":152, "l3x":332,"l3y":200,"l4x":332,"l4y":212,"l5x":165,"l5y":183,"l6x":169,"l6y":240,"point1":303,"point2":160,
+            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 125, "imgp2":112,"size1":"80px","size2":"80px"},
             
             {"width":285, "height": 285,"centerx":142,"centery":142, "outerR1":76, "innerR1":68, "outerR2":86, "innerR2":57,  "outerR3":86, "innerR3":76, "midR3":81,
             "l1x":234,"l1y":100, "l2x":234,"l2y":110, "l3x":262,"l3y":140,"l4x":262,"l4y":148,"l5x":143,"l5y":138,"l6x":145,"l6y":182,"point1":234,"point2":118,
