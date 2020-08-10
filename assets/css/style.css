@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 5% 0;
   overflow: hidden;
 }
 
@@ -291,14 +291,14 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 2.5%;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
   position: relative;
   color: #173b6c;
 }

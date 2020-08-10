@@ -1,19 +1,51 @@
 // create svg element
 data=[{"Product Category":"GRATTOL","Relative Sensitivity":0.290780142,"Sensitivity":0.29,"Order Share":0.06,"Revenue Share":0.06},{"Product Category":"MASURA","Relative Sensitivity":0.205673759,"Sensitivity":0.21,"Order Share":0.06,"Revenue Share":0.04},{"Product Category":"INGARDEN","Relative Sensitivity":0.19858156,"Sensitivity":0.21,"Order Share":0.04,"Revenue Share":0.03},{"Product Category":"IRISK","Relative Sensitivity":0.170212766,"Sensitivity":0.19,"Order Share":0.09,"Revenue Share":0.06},{"Product Category":"RUNAIL","Relative Sensitivity":0.134751773,"Sensitivity":0.18,"Order Share":0.15,"Revenue Share":0.09}];
 
-chart_data=[{"width":370, "height": 380,"centerx":165,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":303,"l1y":140, "l2x":303,"l2y":152, "l3x":332,"l3y":200,"l4x":332,"l4y":212,"l5x":165,"l5y":183,"l6x":169,"l6y":240,"point1":303,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"30px", "f4": "40px","imgp1": 165, "imgp2":185,"size1":"80px","size2":"80px"},{"width":370, "height": 380,"centerx":165,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":303,"l1y":140, "l2x":303,"l2y":152, "l3x":332,"l3y":200,"l4x":332,"l4y":212,"l5x":165,"l5y":183,"l6x":169,"l6y":240,"point1":303,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 104, "imgp2":112,"size1":"90px","size2":"120px"},{"width":370, "height": 380,"centerx":165,"centery":190, "outerR1":101, "innerR1":90, "outerR2":114, "innerR2":76,  "outerR3":114, "innerR3":101, "midR3":108,
-            "l1x":303,"l1y":140, "l2x":303,"l2y":152, "l3x":332,"l3y":200,"l4x":332,"l4y":212,"l5x":165,"l5y":183,"l6x":169,"l6y":240,"point1":303,"point2":160,
-            "f1":"15px","f2":"12px", "f3":"30px", "f4": "45px","imgp1": 125, "imgp2":112,"size1":"80px","size2":"80px"},
+//var chartArea = d3.select('#categoryCharts').node();
+//var chartAreaHeight=chartArea.getBoundingClientRect().height;
+
+//console.log("Height="+chartAreaHeight)
+
+
+var chartArea1 = d3.select('#categoryChart1').node();
+var chartAreaWidth1=chartArea1.getBoundingClientRect().width;
+
+var actualHeight1=380;
+var actualWidth1=370
+var chartAreaHeight1 = (actualHeight1/actualWidth1)*chartAreaWidth1;
+
+
+var chartArea2 = d3.select('#categoryChart4').node();
+var chartAreaWidth2=chartArea2.getBoundingClientRect().width;
+
+var actualHeight2=285;
+var actualWidth2=285
+var chartAreaHeight2 = (actualHeight2/actualWidth2)*chartAreaWidth2;
+
+
+
+var actualFont=15
+
+var chartFont=(15/actualWidth1)*chartAreaWidth1
+
+
+
+chart_data=[{"width":chartAreaWidth1, "height": chartAreaHeight1,"centerx":(chartAreaWidth1/2)-((20/actualWidth1)*chartAreaWidth1),"centery":(chartAreaHeight1/2), "outerR1":(101/actualWidth1)*chartAreaWidth1, "innerR1":(90/actualWidth1)*chartAreaWidth1, "outerR2":(114/actualWidth1)*chartAreaWidth1, "innerR2":(76/actualWidth1)*chartAreaWidth1,  "outerR3":(114/actualWidth1)*chartAreaWidth1, "innerR3":(101/actualWidth1)*chartAreaWidth1, "midR3":(108/actualWidth1)*chartAreaWidth1,
+            "l1x":(303/actualWidth1)*chartAreaWidth1,"l1y":(140/actualHeight1)*chartAreaHeight1, "l2x":(303/actualWidth1)*chartAreaWidth1,"l2y":(152/actualHeight1)*chartAreaHeight1, "l3x":(332/actualWidth1)*chartAreaWidth1,"l3y":(200/actualHeight1)*chartAreaHeight1,"l4x":(332/actualWidth1)*chartAreaWidth1,"l4y":(212/actualHeight1)*chartAreaHeight1,"l5x":(chartAreaWidth1/2)-((20/actualWidth1)*chartAreaWidth1),"l5y":(183/actualHeight1)*chartAreaHeight1,"l6x":(chartAreaWidth1/2)-((16/actualWidth1)*chartAreaWidth1),"l6y":(240/actualHeight1)*chartAreaHeight1,"point1":(303/actualWidth1)*chartAreaWidth1,"point2":(160/actualHeight1)*chartAreaHeight1,
+            "f1":chartFont+"px","f2":(0.8*chartFont)+"px", "f3":(2*chartFont)+"px", "f4": (2.67*chartFont)+"px","imgp1": (chartAreaWidth1/2)-((20/actualWidth1)*chartAreaWidth1), "imgp2":(chartAreaHeight1/2)-((5/actualHeight1)*chartAreaHeight1),"size1":"80px","size2":"80px"},
+            {"width":chartAreaWidth1, "height": chartAreaHeight1,"centerx":(chartAreaWidth1/2)-((20/actualWidth1)*chartAreaWidth1),"centery":(chartAreaHeight1/2), "outerR1":(101/actualWidth1)*chartAreaWidth1, "innerR1":(90/actualWidth1)*chartAreaWidth1, "outerR2":(114/actualWidth1)*chartAreaWidth1, "innerR2":(76/actualWidth1)*chartAreaWidth1,  "outerR3":(114/actualWidth1)*chartAreaWidth1, "innerR3":(101/actualWidth1)*chartAreaWidth1, "midR3":(108/actualWidth1)*chartAreaWidth1,
+            "l1x":(303/actualWidth1)*chartAreaWidth1,"l1y":(140/actualHeight1)*chartAreaHeight1, "l2x":(303/actualWidth1)*chartAreaWidth1,"l2y":(152/actualHeight1)*chartAreaHeight1, "l3x":(332/actualWidth1)*chartAreaWidth1,"l3y":(200/actualHeight1)*chartAreaHeight1,"l4x":(332/actualWidth1)*chartAreaWidth1,"l4y":(212/actualHeight1)*chartAreaHeight1,"l5x":(chartAreaWidth1/2)-((20/actualWidth1)*chartAreaWidth1),"l5y":(183/actualHeight1)*chartAreaHeight1,"l6x":(chartAreaWidth1/2)-((16/actualWidth1)*chartAreaWidth1),"l6y":(240/actualHeight1)*chartAreaHeight1,"point1":(303/actualWidth1)*chartAreaWidth1,"point2":(160/actualHeight1)*chartAreaHeight1,
+            "f1":chartFont+"px","f2":(0.8*chartFont)+"px", "f3":(2*chartFont)+"px", "f4": (3*chartFont)+"px","imgp1": ((104/actualWidth1)*chartAreaWidth1), "imgp2":((112/actualHeight1)*chartAreaHeight1),"size1":"90","size2":"120"},
+            {"width":chartAreaWidth1, "height": chartAreaHeight1,"centerx":(chartAreaWidth1/2)-((20/actualWidth1)*chartAreaWidth1),"centery":(chartAreaHeight1/2), "outerR1":(101/actualWidth1)*chartAreaWidth1, "innerR1":(90/actualWidth1)*chartAreaWidth1, "outerR2":(114/actualWidth1)*chartAreaWidth1, "innerR2":(76/actualWidth1)*chartAreaWidth1,  "outerR3":(114/actualWidth1)*chartAreaWidth1, "innerR3":(101/actualWidth1)*chartAreaWidth1, "midR3":(108/actualWidth1)*chartAreaWidth1,
+            "l1x":(303/actualWidth1)*chartAreaWidth1,"l1y":(140/actualHeight1)*chartAreaHeight1, "l2x":(303/actualWidth1)*chartAreaWidth1,"l2y":(152/actualHeight1)*chartAreaHeight1, "l3x":(332/actualWidth1)*chartAreaWidth1,"l3y":(200/actualHeight1)*chartAreaHeight1,"l4x":(332/actualWidth1)*chartAreaWidth1,"l4y":(212/actualHeight1)*chartAreaHeight1,"l5x":(chartAreaWidth1/2)-((20/actualWidth1)*chartAreaWidth1),"l5y":(183/actualHeight1)*chartAreaHeight1,"l6x":(chartAreaWidth1/2)-((16/actualWidth1)*chartAreaWidth1),"l6y":(240/actualHeight1)*chartAreaHeight1,"point1":(303/actualWidth1)*chartAreaWidth1,"point2":(160/actualHeight1)*chartAreaHeight1,
+            "f1":chartFont+"px","f2":(0.8*chartFont)+"px", "f3":(2*chartFont)+"px", "f4": (3*chartFont)+"px","imgp1": ((125/actualWidth1)*chartAreaWidth1), "imgp2":((112/actualHeight1)*chartAreaHeight1),"size1":"80px","size2":"80px"},
             
-            {"width":285, "height": 285,"centerx":142,"centery":142, "outerR1":76, "innerR1":68, "outerR2":86, "innerR2":57,  "outerR3":86, "innerR3":76, "midR3":81,
-            "l1x":234,"l1y":100, "l2x":234,"l2y":110, "l3x":262,"l3y":140,"l4x":262,"l4y":148,"l5x":143,"l5y":138,"l6x":145,"l6y":182,"point1":234,"point2":118,
-            "f1":"12px","f2":"10px", "f3":"23px", "f4": "34px", "imgp1": 112, "imgp2":86,"size1":"60px","size2":"60px"},{"width":285, "height": 285,"centerx":142,"centery":142, "outerR1":76, "innerR1":68, "outerR2":86, "innerR2":57,  "outerR3":86, "innerR3":76, "midR3":81,
-            "l1x":234,"l1y":100, "l2x":234,"l2y":110, "l3x":262,"l3y":140,"l4x":262,"l4y":148,"l5x":143,"l5y":138,"l6x":145,"l6y":182,"point1":234,"point2":118,
-            "f1":"12px","f2":"10px", "f3":"23px", "f4": "34px", "imgp1": 112, "imgp2":86,"size1":"60px","size2":"60px"}]
+            {"width":chartAreaWidth2, "height": chartAreaHeight2,"centerx":chartAreaWidth2/2,"centery":chartAreaHeight2/2, "outerR1":(76/actualWidth2)*chartAreaWidth2, "innerR1":(68/actualWidth2)*chartAreaWidth2, "outerR2":(86/actualWidth2)*chartAreaWidth2, "innerR2":(57/actualWidth2)*chartAreaWidth2,  "outerR3":(86/actualWidth2)*chartAreaWidth2, "innerR3":(76/actualWidth2)*chartAreaWidth2, "midR3":(81/actualWidth2)*chartAreaWidth2,
+            "l1x":(234/actualWidth2)*chartAreaWidth2,"l1y":(100/actualHeight2)*chartAreaHeight2, "l2x":(234/actualWidth2)*chartAreaWidth2,"l2y":(110/actualHeight2)*chartAreaHeight2, "l3x":(262/actualWidth2)*chartAreaWidth2,"l3y":(140/actualHeight2)*chartAreaHeight2,"l4x":(262/actualWidth2)*chartAreaWidth2,"l4y":(148/actualHeight2)*chartAreaHeight2,"l5x":(143/actualWidth2)*chartAreaWidth2,"l5y":(138/actualHeight2)*chartAreaHeight2,"l6x":(145/actualWidth2)*chartAreaWidth2,"l6y":(182/actualHeight2)*chartAreaHeight2,"point1":(234/actualWidth2)*chartAreaWidth2,"point2":(118/actualHeight2)*chartAreaHeight2,
+            "f1":(0.8*chartFont)+"px","f2":(0.67*chartFont)+"px", "f3":(1.53*chartFont)+"px", "f4": (2.26*chartFont)+"px", "imgp1": (112/actualWidth2)*chartAreaWidth2, "imgp2":(86/actualHeight2)*chartAreaHeight2,"size1":"60px","size2":"60px"},
+            {"width":chartAreaWidth2, "height": chartAreaHeight2,"centerx":chartAreaWidth2/2,"centery":chartAreaHeight2/2, "outerR1":(76/actualWidth2)*chartAreaWidth2, "innerR1":(68/actualWidth2)*chartAreaWidth2, "outerR2":(86/actualWidth2)*chartAreaWidth2, "innerR2":(57/actualWidth2)*chartAreaWidth2,  "outerR3":(86/actualWidth2)*chartAreaWidth2, "innerR3":(76/actualWidth2)*chartAreaWidth2, "midR3":(81/actualWidth2)*chartAreaWidth2,
+            "l1x":(234/actualWidth2)*chartAreaWidth2,"l1y":(100/actualHeight2)*chartAreaHeight2, "l2x":(234/actualWidth2)*chartAreaWidth2,"l2y":(110/actualHeight2)*chartAreaHeight2, "l3x":(262/actualWidth2)*chartAreaWidth2,"l3y":(140/actualHeight2)*chartAreaHeight2,"l4x":(262/actualWidth2)*chartAreaWidth2,"l4y":(148/actualHeight2)*chartAreaHeight2,"l5x":(143/actualWidth2)*chartAreaWidth2,"l5y":(138/actualHeight2)*chartAreaHeight2,"l6x":(145/actualWidth2)*chartAreaWidth2,"l6y":(182/actualHeight2)*chartAreaHeight2,"point1":(234/actualWidth2)*chartAreaWidth2,"point2":(118/actualHeight2)*chartAreaHeight2,
+            "f1":(0.8*chartFont)+"px","f2":(0.67*chartFont)+"px", "f3":(1.53*chartFont)+"px", "f4": (2.26*chartFont)+"px", "imgp1": (112/actualWidth2)*chartAreaWidth2, "imgp2":(86/actualHeight2)*chartAreaHeight2,"size1":"60px","size2":"60px"}]
 
 
 //console.log(data)
