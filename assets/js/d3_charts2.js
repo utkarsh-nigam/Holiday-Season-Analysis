@@ -170,7 +170,11 @@ data=[
             }
            ]
  }
+ var element = d3.select('#peakDaySplit_div1').node();
+ var elementWidth=element.getBoundingClientRect().width;
 
+ var element2 = d3.select('#peakDaySplit_div2').node();
+ var element2Width=element2.getBoundingClientRect().width;
  
 
 var columns = [
@@ -183,8 +187,8 @@ var columns = [
  var table_width=300;
  for (i = 0; i < 1; i++) {
      var donut = donutChart()
-     .width(750)
-     .height(520)
+     .width(elementWidth-20)
+     .height((0.69*elementWidth)-20)
      .cornerRadius(3) // sets how rounded the corners are on each slice
      .padAngle(0.015) // effectively dictates the gap between slices
      .variable('Revenue')
@@ -280,7 +284,7 @@ var columns = [
                      .data(pie)
                  .enter().append('text')
                      .attr('dy', '.35em')
-                     .attr("font-size", "15px")
+                     .attr("font-size", '0.93em')
                      .html(function(d) {
                          // add "key: value" for given category. Number inside tspan is bolded in stylesheet.
                          return d.data[category] + ': <tspan>$' + d.data[variable] + 'K</tspan>';
@@ -372,7 +376,7 @@ var columns = [
                         var caption = d3.select('#peakDaySplit_div2_title')
                                             .append('text')
                                             .attr('class', 'toolTableTitle')
-                                            .attr("width", 270)
+                                            .attr("width", (0.94*element2Width)-10)
                                             .attr("height", 40)
                                             
                                             .html(tableTitle(data)) // add text to the circle.
@@ -384,10 +388,10 @@ var columns = [
 
                         var table = d3.select('#peakDaySplit_div2_table')
                                     .append('table')
-                                    .attr("width", 290)
+                                    .attr("width", element2Width-10)
                                     .attr("height", 200)
-                                    .attr('class', 'toolTable')
-                                    .attr('transform', 'translate(' + 500 / 2 + ',' + height / 2 + ')');
+                                    .attr('class', 'toolTable');
+                                    //.attr('transform', 'translate(' + 500 / 2 + ',' + height / 2 + ')');
 
                         table.append('thead').append('tr')
                         .selectAll('th')
