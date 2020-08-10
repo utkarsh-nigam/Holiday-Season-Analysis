@@ -10,8 +10,10 @@ var twoQuery2=0;
 var twoQuery3=0;
 var oldData = 0;
 var newData = 0;
-var x1_metric="GDPOverall";
-var x2_metric="GDPPerCapita";
+var overallElement = d3.select('.summaryLevel').node();
+var overallWidth=overallElement.getBoundingClientRect().width;
+
+
 function checkColumn(input_value) {
     input_value=input_value-1;
     var quotient = Math.floor(input_value/26);
@@ -84,8 +86,8 @@ function summaryResponseHandler(response) {
         },
         chartArea:{
             top:5,
-            width: 222,
-            height: 463},
+            width: (222/1110)*overallWidth,
+            height: (463/1110)*overallWidth},
         vAxis:{gridlines:{color:'transparent'},
         ticks: [0,350,700,1050,1400,1750,2100] }
     };
@@ -104,8 +106,8 @@ function summaryResponseHandler(response) {
         },
         chartArea:{
             top:5,
-            width: 222,
-            height: 463},
+            width: (222/1110)*overallWidth,
+            height: (463/1110)*overallWidth},
         vAxis:{gridlines:{color:'transparent'},
         ticks: [0,50,100,150,200,250,300] }
     };
@@ -123,8 +125,8 @@ function summaryResponseHandler(response) {
         },
         chartArea:{
             top:5,
-            width: 222,
-            height: 463},
+            width: (222/1110)*overallWidth,
+            height: (463/1110)*overallWidth},
         vAxis:{gridlines:{color:'transparent'},
         ticks: [0,250,500,750,1000,1250,1500] }
     };
@@ -197,7 +199,7 @@ function yearlyPerformanceResponseHandler(response) {
                       ticks: [0,300,600,900,1200] },
             chartArea:{
                     top:5,
-                    width: 250,
+                    width: (250/1110)*overallWidth,
                     height: "90%" }
               
         };
@@ -222,7 +224,7 @@ function yearlyPerformanceResponseHandler(response) {
                       ticks: [0,40,80,120,160] },
             chartArea:{
                     top:5,
-                    width: 250,
+                    width: (250/1110)*overallWidth,
                     height: "90%" }
         };
         colChartDiff2.draw(diffData2,options2);
@@ -245,7 +247,7 @@ function yearlyPerformanceResponseHandler(response) {
                 ticks: [0,200,400,600,800] },
             chartArea:{
                     top:5,
-                    width: 250,
+                    width: (250/1110)*overallWidth,
                     height: "90%" }
         };
         
