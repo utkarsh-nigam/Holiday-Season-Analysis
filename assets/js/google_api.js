@@ -76,7 +76,7 @@ function summaryResponseHandler(response) {
 
     var options1 = {
         legend: { position: 'none' },
-        backgroundColor: "#f5f8fd",
+        //backgroundColor: "#f5f8fd",
         series: {
             0: {color: "#003f5c"},
             1: {color: "#bc5090"},
@@ -96,7 +96,7 @@ function summaryResponseHandler(response) {
     //var diffData2 = colChartDiff2.computeDiff(oldView2, newView2);
     var options2 = {
         legend: { position: 'none' },
-        backgroundColor: "#f5f8fd",
+        //backgroundColor: "#f5f8fd",
         series: {
             0: {color: "#003f5c"},
             1: {color: "#bc5090"},
@@ -115,7 +115,7 @@ function summaryResponseHandler(response) {
     //var diffData3 = colChartDiff3.computeDiff(oldView3, newView3);
     var options3 = {
         legend: { position: 'right' },
-        backgroundColor: "#f5f8fd",
+        //backgroundColor: "#f5f8fd",
         series: {
             0: {color: "#003f5c"},
             1: {color: "#bc5090"},
