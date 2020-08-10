@@ -176,6 +176,7 @@ data=[
  var element2 = d3.select('#peakDaySplit_div2').node();
  var element2Width=element2.getBoundingClientRect().width;
  
+var bodyFont=16;
 
 var columns = [
     { head: 'Product Name', cl: 'title', html: d3.f('product_name') },
@@ -284,7 +285,7 @@ var columns = [
                      .data(pie)
                  .enter().append('text')
                      .attr('dy', '.35em')
-                     .attr("font-size", '0.93em')
+                     .attr("font-size", ((bodyFont/750)*elementWidth*0.93)+'px')
                      .html(function(d) {
                          // add "key: value" for given category. Number inside tspan is bolded in stylesheet.
                          return d.data[category] + ': <tspan>$' + d.data[variable] + 'K</tspan>';
@@ -316,7 +317,7 @@ var columns = [
                     tip += '<tspan x="0" dy="1.2em">' + 'for More Details' + '</tspan>';
                     return tip
                           }) // add text to the circle.
-                 .style('font-size', '1.5em')
+                 .style('font-size', ((bodyFont/750)*elementWidth*1.5)+"px")
                  .style('text-anchor', 'middle'); // centres text in tooltip
                           
                  svg.append('circle')
@@ -364,7 +365,7 @@ var columns = [
                              .attr('class', 'toolCircle')
                              .attr('dy', -35) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
                              .html(toolTipHTML(data)) // add text to the circle.
-                             .style('font-size', '1.5em')
+                             .style('font-size', ((bodyFont/750)*elementWidth*1.5)+"px")
                              .style('text-anchor', 'middle'); // centres text in tooltip
  
                          svg.append('circle')
@@ -380,7 +381,7 @@ var columns = [
                                             .attr("height", 40)
                                             
                                             .html(tableTitle(data)) // add text to the circle.
-                                            .style('font-size', '1.2em')
+                                            .style('font-size', ((bodyFont/750)*elementWidth*1.2)+"px")
                                             .attr("font-weight", "700")
                                             .style('text-anchor', 'middle'); // centres text in tooltip
 
@@ -389,7 +390,7 @@ var columns = [
                         var table = d3.select('#peakDaySplit_div2_table')
                                     .append('table')
                                     .attr("width", element2Width-10)
-                                    .attr("height", 200)
+                                    .attr("height", (element2Width*0.7)-10)
                                     .attr('class', 'toolTable');
                                     //.attr('transform', 'translate(' + 500 / 2 + ',' + height / 2 + ')');
 
@@ -399,6 +400,7 @@ var columns = [
                         .append('th')
                         .attr('class', d3.f('cl'))
                         .text(d3.f('head'))
+                        .style('font-size', ((bodyFont/750)*elementWidth*1.2)+"px")
                         .style('background-color', colour(data.data[category])+"70");
                     
                         // create table body
@@ -420,6 +422,7 @@ var columns = [
                             .append('td')
                             .html(d3.f('html'))
                             .attr('class', d3.f('cl'))
+                            .style('font-size', ((bodyFont/750)*elementWidth*1.2)+"px")
                             .style('background', colour(data.data[category])+"35")
                         
                         function length() {
@@ -445,7 +448,7 @@ var columns = [
                             tip += '<tspan x="0" dy="1.2em">' + 'for More Details' + '</tspan>';
                             return tip
                                   }) // add text to the circle.
-                         .style('font-size', '1.5em')
+                         .style('font-size', ((bodyFont/750)*elementWidth*1.5)+"px")
                          .style('text-anchor', 'middle'); // centres text in tooltip
 
                          svg.append('circle')
