@@ -244,7 +244,7 @@ var columns = [
                  // ===========================================================================================
                  // append the svg object to the selection
                  var svg1 = selection.append('svg')
-                     .attr('width', width + table_width + margin.left + margin.right)
+                     .attr('width', width  + margin.left + margin.right)
                      .attr('height', height + margin.top + margin.bottom);
                 //  .append('g')
                 //      .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
