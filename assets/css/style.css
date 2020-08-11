@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #149ddd;
 }
 
-@media (max-height: 600px) {
+@media (max-height: 900px) {
   .nav-menu {
     padding-top: 7px;
   }
