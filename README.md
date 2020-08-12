@@ -14,9 +14,6 @@ Analyze the performance of holiday months i.e. November-December and compare the
 ## Date Range:
 October 2019 - December 2019
 
-## Data Preprocessing
-
-
 ## Functional Requirements
 Able to preprocess, aggregate, structure and, deliver appropriate visualization of the online sales data with respect to different custom views a user wants to look at in order to generate insights followed by recommendations.  To maintain consistent experience throughout, the end-user can interact with an HTML based web page. Each visualization contains its respective level of detail specifications based on its type.
 
